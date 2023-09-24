@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 # Read and Join Data
 def merge_tables():
-    transactionData = pd.read_csv('C:/Users/tipan/OneDrive/Documents/Interviews/onebyzero/automation/transactions.csv')
+    transactionData = pd.read_csv('data/Transaction_202309024191300.csv')
     productData = pd.read_csv('data/ProductReference.csv')
 
     merged_tables = transactionData.merge(productData, on='productId', how='left')
